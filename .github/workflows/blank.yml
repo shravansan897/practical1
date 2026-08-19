@@ -20,3 +20,5 @@ jobs:
              python-version: '3.13'
         - name: hello.py
           run: python hello.py
+        - name: combination of string
+          run: python combo.py
