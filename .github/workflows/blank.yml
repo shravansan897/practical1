@@ -1,4 +1,4 @@
-name: CI
+name: CD
 
 on:
  push:
@@ -14,3 +14,9 @@ jobs:
         - name: run a multi line script 
           run: echo add other actions to build,
                echo test, and deploy your project
+        - uses: actions/checkout@v7
+        - uses: actions/setup-python@v7
+          with:
+             python-version: '3.13'
+        - name: hello.py
+          run: python hello.py
